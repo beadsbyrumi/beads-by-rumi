@@ -1,4 +1,51 @@
-document.addEventListener('DOMContentLoaded',()=>{const t=document.querySelector('.menu-toggle'),n=document.querySelector('.nav');if(t)t.onclick=()=>n.classList.toggle('open');
-document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');let f=b.dataset.filter;document.querySelectorAll('.product').forEach(p=>p.style.display=f==='all'||p.dataset.category.includes(f)?'block':'none')});
-const box=document.getElementById('lightbox'),im=document.getElementById('lightbox-img');document.querySelectorAll('[data-lightbox]').forEach(b=>b.onclick=()=>{im.src=b.dataset.lightbox;box.classList.add('open')});if(box)box.onclick=e=>{if(e.target===box||e.target.classList.contains('close'))box.classList.remove('open')};
-const form=document.getElementById('custom-form');if(form)form.onsubmit=e=>{e.preventDefault();let d=new FormData(form);let m=`Hi Beads By Rumi! I'd like a custom order.\nName: ${d.get('name')}\nItem: ${d.get('item')}\nColors: ${d.get('colors')}\nDetails: ${d.get('details')}`;window.open('https://wa.me/923322746648?text='+encodeURIComponent(m),'_blank')};});
+document.addEventListener("DOMContentLoaded",()=>{
+  const menu=document.querySelector(".menu-toggle"), nav=document.querySelector(".nav");
+  if(menu) menu.addEventListener("click",()=>nav.classList.toggle("open"));
+
+  const productGrid=document.querySelector("[data-products]");
+  if(productGrid && window.BBR_PRODUCTS){
+    const wa="923322636648";
+    productGrid.innerHTML=window.BBR_PRODUCTS.map(p=>`
+      <article class="card product" data-category="${p.category.toLowerCase()}">
+        <img src="${p.image}" alt="${p.name}">
+        <div class="card-body">
+          <span class="badge">${p.badge}</span>
+          <h3>${p.name}</h3>
+          <p>${p.description}</p>
+          <div class="price-row"><span class="price">${p.pricePKR}</span><span class="price">${p.priceUSD}</span></div>
+          <p class="meta"><strong>${p.status}</strong> · ${p.production}</p>
+          <a class="btn-small" href="product.html?code=${encodeURIComponent(p.code)}">View Details</a>
+          <a class="btn-small" href="https://wa.me/${wa}?text=${encodeURIComponent("Hi Beads by Rumi, I’m interested in "+p.name+" ("+p.code+").")}">Order on WhatsApp</a>
+        </div>
+      </article>`).join("");
+  }
+
+  const featured=document.querySelector("[data-featured]");
+  if(featured && window.BBR_PRODUCTS){
+    featured.innerHTML=window.BBR_PRODUCTS.filter(p=>p.featured).map(p=>`
+      <article class="card"><img src="${p.image}" alt="${p.name}"><div class="card-body">
+      <span class="badge">${p.badge}</span><h3>${p.name}</h3><p>${p.description}</p>
+      <div class="price-row"><span class="price">${p.pricePKR}</span><span class="price">${p.priceUSD}</span></div>
+      <a class="btn-small" href="product.html?code=${encodeURIComponent(p.code)}">View Product</a></div></article>`).join("");
+  }
+
+  const offer=document.querySelector("[data-offer]");
+  if(offer && window.BBR_OFFERS && window.BBR_OFFERS.active){
+    offer.innerHTML=`<p class="eyebrow">${BBR_OFFERS.eyebrow}</p><h2>${BBR_OFFERS.title}</h2><p class="narrow">${BBR_OFFERS.text}</p><span class="offer-badge">${BBR_OFFERS.badge}</span>`;
+  }
+
+  document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
+    document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active")); btn.classList.add("active");
+    const f=btn.dataset.filter;
+    document.querySelectorAll(".product").forEach(p=>p.style.display=(f==="all"||p.dataset.category.includes(f))?"block":"none");
+  }));
+
+  const params=new URLSearchParams(location.search), code=params.get("code");
+  const detail=document.querySelector("[data-product-detail]");
+  if(detail && window.BBR_PRODUCTS){
+    const p=window.BBR_PRODUCTS.find(x=>x.code===code) || window.BBR_PRODUCTS[0];
+    detail.innerHTML=`<img src="${p.image}" alt="${p.name}"><div><span class="badge">${p.badge}</span><p class="eyebrow">${p.collection} · ${p.category}</p><h1>${p.name}</h1><div class="price-row"><span class="price">${p.pricePKR}</span><span class="price">${p.priceUSD}</span></div><p class="description">${p.description}</p><div class="info-list">
+      <div><strong>Product Code</strong><span>${p.code}</span></div><div><strong>Status</strong><span>${p.status}</span></div><div><strong>Production</strong><span>${p.production}</span></div><div><strong>Materials</strong><span>${p.materials}</span></div><div><strong>Colors</strong><span>${p.colors}</span></div><div><strong>Bulk Orders</strong><span>${p.bulk}</span></div>
+      </div><a class="btn" href="https://wa.me/923322636648?text=${encodeURIComponent("Hi Beads by Rumi, I’d like to order "+p.name+" ("+p.code+").")}">Order on WhatsApp</a></div>`;
+  }
+});
