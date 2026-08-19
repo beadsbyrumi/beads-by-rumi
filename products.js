@@ -32,5 +32,23 @@ window.BBR_PRODUCTS = [
     colors: "Pearl White / Ivory. Custom color accents available on request.",
     production: "2–3 business days",
     bulk: "Available on request"
+  },
+    {
+    code: "BBR-PB-001",
+    name: "Handmade Pearl Beaded Party Potli Bag",
+    collection: "Celebration Collection",
+    category: "HANDBAGS",
+    pricePKR: "PKR 10,000",
+    priceUSD: "USD 36",
+    status: "In Stock + Made to Order",
+    badge: "Party Favorite",
+    featured: true,
+    image: "images/beads party.jpg.jpg",
+    description: "A beautifully handcrafted pearl beaded party potli bag featuring textured floral-style beadwork, a satin inner pouch and a decorative satin ribbon bow. Designed for weddings, parties, festive occasions and elegant evening events.",
+    materials: "Faux pearl beads in multiple sizes; durable clear monofilament/nylon beading thread; satin inner pouch; satin ribbon; metal hardware.",
+    colors: "Beige / Pink / Off-White.",
+    production: "2–3 days, depending on quantity",
+    bulk: "Available for bulk orders on request"
   }
 ];
+
