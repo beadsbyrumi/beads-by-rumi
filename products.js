@@ -66,6 +66,23 @@ window.BBR_PRODUCTS = [
     colors: "Off-White / Ivory / Cream",
     production: "2 days, depending on order quantity",
     bulk: "Available for bulk orders on request"
+  },
+    {
+    code: "BBR-EP-001",
+    name: "Handmade Pearl Beaded Evening Party Bag",
+    collection: "Celebration Collection",
+    category: "HANDBAGS",
+    pricePKR: "PKR 9,000",
+    priceUSD: "USD 32",
+    status: "In Stock + Made to Order",
+    badge: "Evening Favorite",
+    featured: true,
+    image: "images/Handmade Pearl Beaded night Party Bag.jpg",
+    description: "A beautifully handcrafted pearl beaded evening party bag featuring a textured pearl-bead body, matching beaded handle and elegant satin interior. Designed for weddings, evening celebrations, parties and special occasions.",
+    materials: "Faux pearl beads with a glossy pearlescent finish; high-strength clear monofilament/nylon beading thread; satin interior.",
+    colors: "Ivory / Cream / Off-White",
+    production: "2–3 days, depending on order quantity",
+    bulk: "Available for bulk orders on request"
   }
 ];
 
