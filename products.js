@@ -49,6 +49,23 @@ window.BBR_PRODUCTS = [
     colors: "Beige / Pink / Off-White.",
     production: "2–3 days, depending on quantity",
     bulk: "Available for bulk orders on request"
+  },
+    {
+    code: "BBR-PC-001",
+    name: "Handmade Pearl Beaded Clutch Shoulder Bag",
+    collection: "Signature Collection",
+    category: "SHOULDER BAGS",
+    pricePKR: "PKR 7,000",
+    priceUSD: "USD 25",
+    status: "In Stock + Made to Order",
+    badge: "Elegant Classic",
+    featured: true,
+    image: "images/pearl beaded clutch.png",
+    description: "A timeless pearl-beaded clutch shoulder bag handcrafted with lustrous ivory-toned beads and a matching woven shoulder strap. Its compact silhouette makes it an elegant choice for weddings, evening occasions, celebrations and special events.",
+    materials: "Faux pearl beads with a glossy pearlescent finish; high-strength clear monofilament/nylon beading thread.",
+    colors: "Off-White / Ivory / Cream",
+    production: "2 days, depending on order quantity",
+    bulk: "Available for bulk orders on request"
   }
 ];
 
