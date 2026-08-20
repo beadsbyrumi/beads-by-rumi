@@ -219,6 +219,23 @@ window.BBR_PRODUCTS = [
     colors: "Cream / Iridescent White pearls with Gold-toned beads and clasp.",
     production: "2–3 days, depending on order quantity",
     bulk: "Available for bulk orders on request via WhatsApp"
-  }
+  },
+  {
+  code: "BBR-FPB-001",
+  name: "Handmade Freshwater Pearl Stretch Bracelet",
+  collection: "Accessories Collection",
+  category: "ACCESSORIES",
+  pricePKR: "PKR 2,000",
+  priceUSD: "USD 7",
+  status: "In Stock + Made to Order",
+  badge: "Freshwater Pearl Classic",
+  featured: true,
+  image: "images/homemade freshwater pearl stretch bracelet.jpg",
+  description: "A delicate handmade stretch bracelet featuring luminous freshwater pearls paired with refined gold metallic beads. The comfortable elastic design makes it easy to wear, while the pearl-and-gold combination gives it an elegant finish for everyday wear, festive occasions and gifting.",
+  materials: "Freshwater pearls; gold metallic beads; durable elastic stretch cord.",
+  colors: "Cream / Off-White pearls with Gold metallic beads.",
+  production: "2–3 days, depending on order",
+  bulk: "Available for bulk orders on request via WhatsApp"
+}
 ];
 
