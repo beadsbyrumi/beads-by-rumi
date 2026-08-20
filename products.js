@@ -253,6 +253,23 @@ window.BBR_PRODUCTS = [
   colors: "Pearl / Cream White with Gold accents.",
   production: "2–3 days, depending on order",
   bulk: "Available for bulk orders on request via WhatsApp"
+},
+  {
+  code: "BBR-TLP-001",
+  name: "Handmade Triple Layer Pearl Bracelet",
+  collection: "Accessories Collection",
+  category: "ACCESSORIES",
+  pricePKR: "PKR 1,500",
+  priceUSD: "USD 5",
+  status: "In Stock + Made to Order",
+  badge: "Pearl Classic",
+  featured: true,
+  image: "images/homemade triple layer pearl bracelet.jpg",
+  description: "A timeless handmade triple-layer pearl bracelet featuring three elegant strands of pearl-white beads finished with a delicate gold-tone clasp and extension chain. Designed for weddings, festive occasions, evening wear and elegant everyday styling.",
+  materials: "Faux pearl beads; gold-toned metal lobster claw clasp; gold-tone extension chain.",
+  colors: "Pearl White / Cream with Gold-tone hardware.",
+  production: "2–3 days, depending on order quantity",
+  bulk: "Available for bulk orders on request via WhatsApp"
 }
 ];
 
