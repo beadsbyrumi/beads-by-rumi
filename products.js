@@ -202,6 +202,23 @@ window.BBR_PRODUCTS = [
   colors: "Cream / Off-White pearls; Gold hardware; Pearl White shell accent.",
   production: "2–3 days, depending on order",
   bulk: "Available on request via WhatsApp"
-}
+},
+    {
+    code: "BBR-TB-001",
+    name: "Handmade Beaded Pearl Toggle Bracelet",
+    collection: "Accessories Collection",
+    category: "ACCESSORIES",
+    pricePKR: "PKR 2,500",
+    priceUSD: "USD 9",
+    status: "In Stock + Made to Order",
+    badge: "Pearl Classic",
+    featured: true,
+    image: "images/homemade beaded pearl toggle bracelet.jpg",
+    description: "A handcrafted pearl toggle bracelet featuring luminous pearl beads arranged with delicate gold-toned spacer beads and finished with an elegant toggle clasp. A timeless accessory for everyday wear, festive occasions and thoughtful gifting.",
+    materials: "Freshwater/faux pearls; gold metallic seed or spacer beads; gold-toned toggle clasp; durable jewelry wire/cord.",
+    colors: "Cream / Iridescent White pearls with Gold-toned beads and clasp.",
+    production: "2–3 days, depending on order quantity",
+    bulk: "Available for bulk orders on request via WhatsApp"
+  }
 ];
 
