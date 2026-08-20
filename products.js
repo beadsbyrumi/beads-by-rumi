@@ -185,6 +185,23 @@ window.BBR_PRODUCTS = [
   colors: "White / Off-White, Light Pink, with Gold-tone hardware.",
   production: "2–3 days, depending on order quantity",
   bulk: "Available for bulk orders on request via WhatsApp"
+},
+  {
+  code: "BBR-PIK-001",
+  name: "Custom Pearl Initial Keychain",
+  collection: "Accessories Collection",
+  category: "ACCESSORIES",
+  pricePKR: "PKR 1,800",
+  priceUSD: "USD 6",
+  status: "In Stock + Made to Order",
+  badge: "Personalized Gift",
+  featured: true,
+  image: "images/custom initial pearl keychain.jpg",
+  description: "A delicate custom pearl keychain designed with lustrous cream-toned pearls, elegant gold hardware and a pearl-white shell accent. A beautiful personalized accessory for handbags, keys, pouches and gifting.",
+  materials: "Faux pearls; gold-toned metal clasp and jump rings; mother-of-pearl/acrylic shell accent; rhinestone-accented bead caps.",
+  colors: "Cream / Off-White pearls; Gold hardware; Pearl White shell accent.",
+  production: "2–3 days, depending on order",
+  bulk: "Available on request via WhatsApp"
 }
 ];
 
