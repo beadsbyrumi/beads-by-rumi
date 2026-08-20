@@ -117,6 +117,23 @@ window.BBR_PRODUCTS = [
     colors: "White / Off-White with pearl finish.",
     production: "2–3 days, depending on order quantity",
     bulk: "Available for bulk orders on request via WhatsApp"
-  }
+  },
+  {
+  code: "BBR-CB-001",
+  name: "Handmade Crystal Bridal Beaded Clutch",
+  collection: "Bridal Collection",
+  category: "SHOULDER BAGS",
+  pricePKR: "PKR 15,000",
+  priceUSD: "USD 54",
+  status: "Made to Order",
+  badge: "Bridal Collection",
+  featured: true,
+  image: "images/handmade crystal bridal beaded wedding clutch.jpg",
+  description: "A sophisticated crystal-beaded bridal clutch handcrafted with translucent faceted beads that beautifully catch and reflect the light. Featuring a structured silhouette and matching beaded shoulder strap, it is designed for brides, weddings, receptions and elegant evening occasions.",
+  materials: "Translucent faceted crystal glass or acrylic beads; durable beading thread/clear monofilament line.",
+  colors: "Clear / Translucent Crystal with subtle silver-white undertones.",
+  production: "2–3 days, depending on order",
+  bulk: "Available for bulk orders on request via WhatsApp"
+}
 ];
 
