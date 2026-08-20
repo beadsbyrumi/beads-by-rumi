@@ -236,6 +236,23 @@ window.BBR_PRODUCTS = [
   colors: "Cream / Off-White pearls with Gold metallic beads.",
   production: "2–3 days, depending on order",
   bulk: "Available for bulk orders on request via WhatsApp"
+},
+  {
+  code: "BBR-GPB-001",
+  name: "Handmade Golden Pearl Bangle Bracelet",
+  collection: "Accessories Collection",
+  category: "ACCESSORIES",
+  pricePKR: "PKR 2,500",
+  priceUSD: "USD 9",
+  status: "In Stock + Made to Order",
+  badge: "Golden Pearl Classic",
+  featured: true,
+  image: "images/homemade golden pearl bangle bracelet.jpg",
+  description: "A luxurious handmade pearl bangle bracelet featuring multiple layers of lustrous white pearls woven with delicate gold metallic beads and finished with an elegant multi-strand box clasp. A beautiful statement accessory for festive occasions, weddings, celebrations and gifting.",
+  materials: "White pearls; gold metallic seed/bugle beads; gold multi-strand box clasp.",
+  colors: "Pearl / Cream White with Gold accents.",
+  production: "2–3 days, depending on order",
+  bulk: "Available for bulk orders on request via WhatsApp"
 }
 ];
 
