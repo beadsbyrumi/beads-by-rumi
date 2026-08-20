@@ -270,6 +270,23 @@ window.BBR_PRODUCTS = [
   colors: "Pearl White / Cream with Gold-tone hardware.",
   production: "2–3 days, depending on order quantity",
   bulk: "Available for bulk orders on request via WhatsApp"
+},
+  {
+  code: "BBR-KI-001",
+  name: "Handmade Custom Pearl Initial Keychain",
+  collection: "Accessories Collection",
+  category: "ACCESSORIES",
+  pricePKR: "PKR 1,600",
+  priceUSD: "USD 6",
+  status: "In Stock + Made to Order",
+  badge: "Personalized Gift",
+  featured: true,
+  image: "images/custom made pearl keychains.jpg",
+  description: "A beautiful handmade custom pearl initial keychain featuring lustrous pearl beads, a personalized initial charm, gold-tone detailing and a secure key ring clasp. A thoughtful personalized accessory for handbags, keys and gifting.",
+  materials: "Faux pearl beads; gold-toned wire and key ring clasp; acrylic initial/letter beads; gold-toned metal chain.",
+  colors: "Cream / Pearl White, Gold, Black & White letter beads.",
+  production: "2–3 days, depending on order quantity",
+  bulk: "Available for bulk orders on request via WhatsApp"
 }
 ];
 
