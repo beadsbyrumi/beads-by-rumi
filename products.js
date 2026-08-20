@@ -134,6 +134,23 @@ window.BBR_PRODUCTS = [
   colors: "Clear / Translucent Crystal with subtle silver-white undertones.",
   production: "2–3 days, depending on order",
   bulk: "Available for bulk orders on request via WhatsApp"
+},
+  {
+  code: "BBR-MG-001",
+  name: "Handmade Mini Pearl Gifting Shoulder Bag",
+  collection: "Gifting Collection",
+  category: "SHOULDER BAGS",
+  pricePKR: "PKR 6,500",
+  priceUSD: "USD 23",
+  status: "In Stock + Made to Order",
+  badge: "Perfect Gift",
+  featured: true,
+  image: "images/handmade mini gifting beaded bag.jpg",
+  description: "A charming mini pearl beaded shoulder bag designed for elegant gifting and special occasions. The compact structured body is woven with glossy pearl beads and finished with a delicate gold-tone chain strap, making it a beautiful choice for weddings, parties, festive celebrations and thoughtful gifts.",
+  materials: "Faux pearl/acrylic beads; durable woven beading thread or clear monofilament line; metallic gold-tone chain strap.",
+  colors: "White / Off-White pearl beads with a gold-tone chain.",
+  production: "2–3 days, depending on order quantity",
+  bulk: "Available for bulk orders on request via WhatsApp"
 }
 ];
 
