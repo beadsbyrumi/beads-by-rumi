@@ -151,6 +151,23 @@ window.BBR_PRODUCTS = [
   colors: "White / Off-White pearl beads with a gold-tone chain.",
   production: "2–3 days, depending on order quantity",
   bulk: "Available for bulk orders on request via WhatsApp"
+},
+  {
+  code: "BBR-PS-001",
+  name: "Handmade Pearl Beaded Shoulder Bag",
+  collection: "Signature Collection",
+  category: "SHOULDER BAGS",
+  pricePKR: "PKR 8,000",
+  priceUSD: "USD 28",
+  status: "In Stock + Made to Order",
+  badge: "Pearl Classic",
+  featured: true,
+  image: "images/handmade pearl shoulder bag.jpg",
+  description: "A timeless handmade pearl beaded shoulder bag featuring a compact structured silhouette, elegant top handle and matching shoulder strap. Its classic ivory-white pearl finish makes it a versatile choice for weddings, festive occasions, evening events and elegant everyday gifting.",
+  materials: "Faux pearl / pearl acrylic beads; clear beading fishing line or durable nylon thread.",
+  colors: "Ivory / White with a glossy pearl finish.",
+  production: "2–3 days, depending on order quantity",
+  bulk: "Available for bulk orders on request via WhatsApp"
 }
 ];
 
