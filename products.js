@@ -77,7 +77,7 @@ window.BBR_PRODUCTS = [
     status: "In Stock + Made to Order",
     badge: "Evening Favorite",
     featured: true,
-    image: "images/Handmade Pearl Beaded night Party Bag.jpg",
+    image: "images/Handmade Pearl Beaded Evening Party Bag.jpg",
     description: "A beautifully handcrafted pearl beaded evening party bag featuring a textured pearl-bead body, matching beaded handle and elegant satin interior. Designed for weddings, evening celebrations, parties and special occasions.",
     materials: "Faux pearl beads with a glossy pearlescent finish; high-strength clear monofilament/nylon beading thread; satin interior.",
     colors: "Ivory / Cream / Off-White",
