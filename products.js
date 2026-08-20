@@ -168,6 +168,23 @@ window.BBR_PRODUCTS = [
   colors: "Ivory / White with a glossy pearl finish.",
   production: "2–3 days, depending on order quantity",
   bulk: "Available for bulk orders on request via WhatsApp"
+},
+  {
+  code: "BBR-KC-001",
+  name: "Handmade Pearl Beaded Bag Charm & Keychain Set",
+  collection: "Accessories Collection",
+  category: "ACCESSORIES",
+  pricePKR: "PKR 1,500",
+  priceUSD: "USD 5",
+  status: "In Stock + Made to Order",
+  badge: "Perfect Gift",
+  featured: true,
+  image: "images/pearl beaded bag charm keychain set.jpg",
+  description: "A charming handmade pearl beaded bag charm and keychain set featuring elegant white and light-pink pearl bead designs with gold-tone key rings and lobster clasps. Perfect for decorating handbags, pouches, keys and gifting.",
+  materials: "Faux pearl/acrylic pearl beads; durable woven beading thread/line; metallic gold-finish key rings with lobster clasp attachments.",
+  colors: "White / Off-White, Light Pink, with Gold-tone hardware.",
+  production: "2–3 days, depending on order quantity",
+  bulk: "Available for bulk orders on request via WhatsApp"
 }
 ];
 
