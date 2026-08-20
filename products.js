@@ -100,6 +100,23 @@ window.BBR_PRODUCTS = [
     colors: "Cream / Off-White / Ivory",
     production: "2–3 days, depending on order",
     bulk: "Available on request via WhatsApp"
+  },
+    {
+    code: "BBR-MB-001",
+    name: "Handmade White Pearl Mia Beaded Bag",
+    collection: "Signature Collection",
+    category: "HANDBAGS",
+    pricePKR: "PKR 10,500",
+    priceUSD: "USD 38",
+    status: "Made to Order",
+    badge: "Elegant Pearl Design",
+    featured: true,
+    image: "images/handmade white pearl mia beaded bag.jpg",
+    description: "A delicate handmade white pearl beaded bag featuring a structured pearl-beaded body, matching handle and a soft sheer inner pouch with drawstring ribbon. Its clean ivory-white finish makes it especially suited to weddings, festive occasions, evening events and elegant gifting.",
+    materials: "Faux pearls / pearl beads; woven beading thread or clear monofilament line; sheer inner pouch with drawstring ribbon.",
+    colors: "White / Off-White with pearl finish.",
+    production: "2–3 days, depending on order quantity",
+    bulk: "Available for bulk orders on request via WhatsApp"
   }
 ];
 
