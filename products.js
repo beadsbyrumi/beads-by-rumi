@@ -83,6 +83,23 @@ window.BBR_PRODUCTS = [
     colors: "Ivory / Cream / Off-White",
     production: "2–3 days, depending on order quantity",
     bulk: "Available for bulk orders on request"
+  },
+    {
+    code: "BBR-MQ-001",
+    name: "Handmade Mini Pearl Beaded Quinn Bag",
+    collection: "Signature Collection",
+    category: "HANDBAGS",
+    pricePKR: "PKR 11,000",
+    priceUSD: "USD 40",
+    status: "Made to Order",
+    badge: "Mini Luxury",
+    featured: true,
+    image: "images/handmade mini quinn bag.jpg",
+    description: "A refined mini pearl-beaded handbag featuring a structured silhouette and matching beaded top handle. Handcrafted bead by bead in lustrous ivory-toned pearls, this compact statement bag is designed for weddings, celebrations, evening occasions and elegant everyday moments.",
+    materials: "High-luster faux-pearl acrylic/glass beads; clear high-strength monofilament nylon line woven in a structured right-angle pattern.",
+    colors: "Cream / Off-White / Ivory",
+    production: "2–3 days, depending on order",
+    bulk: "Available on request via WhatsApp"
   }
 ];
 
