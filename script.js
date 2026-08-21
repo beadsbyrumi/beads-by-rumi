@@ -30,9 +30,13 @@ document.addEventListener("DOMContentLoaded",()=>{
   }
 
   const offer=document.querySelector("[data-offer]");
-  if(offer && window.BBR_OFFERS && window.BBR_OFFERS.active){
-    offer.innerHTML=`<p class="eyebrow">${BBR_OFFERS.eyebrow}</p><h2>${BBR_OFFERS.title}</h2><p class="narrow">${BBR_OFFERS.text}</p><span class="offer-badge">${BBR_OFFERS.badge}</span>`;
-  }
+  if(offer && window.BBR_OFFERS && window.BBR_OFFERS = {
+  active: true,
+  eyebrow: "CURRENT OFFER",
+  title: "Handcrafted with a little extra love",
+  text: "Looking for a special gift or planning an event? Ask us about custom colors, personalized orders and bulk quantities.",
+  badge: "Custom & Bulk Orders Available"
+};
 
   document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
     document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active")); btn.classList.add("active");
