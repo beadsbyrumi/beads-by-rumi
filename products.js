@@ -287,6 +287,23 @@ window.BBR_PRODUCTS = [
   colors: "Cream / Pearl White, Gold, Black & White letter beads.",
   production: "2–3 days, depending on order quantity",
   bulk: "Available for bulk orders on request via WhatsApp"
+},
+  {
+  code: "BBR-FB-001",
+  name: "Handmade Multicolor Flower Beaded Bracelet",
+  collection: "Accessories Collection",
+  category: "BRACELETS",
+  pricePKR: "PKR 900",
+  priceUSD: "USD 3",
+  status: "In Stock + Made to Order",
+  badge: "Colorful Handmade Favorite",
+  featured: true,
+  image: "images/multi color flower bracelet.jpg",
+  description: "A cheerful handmade flower bracelet featuring colorful seed-bead flowers arranged along a delicate beaded strand. With soft pink, blue, peach, mauve and white tones accented with golden flower centers, this playful bracelet makes a lovely everyday accessory or thoughtful handmade gift.",
+  materials: "Glass seed beads; silver-toned lobster claw clasp; crimp beads; jewelry wire/cord.",
+  colors: "Pink, Light Blue, Peach/Yellow, Soft Pink, Mauve/Purple, White and Gold accents.",
+  production: "2–3 days, depending on order quantity",
+  bulk: "Available for bulk orders on request via WhatsApp"
 }
 ];
 
