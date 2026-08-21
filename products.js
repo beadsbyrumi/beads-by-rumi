@@ -281,7 +281,7 @@ window.BBR_PRODUCTS = [
   status: "In Stock + Made to Order",
   badge: "Personalized Gift",
   featured: true,
-  image: "images/custom made pearl keychains.jpg",
+  image: "images/Handmade Custom Pearl Initial Keychain.jpg",
   description: "A beautiful handmade custom pearl initial keychain featuring lustrous pearl beads, a personalized initial charm, gold-tone detailing and a secure key ring clasp. A thoughtful personalized accessory for handbags, keys and gifting.",
   materials: "Faux pearl beads; gold-toned wire and key ring clasp; acrylic initial/letter beads; gold-toned metal chain.",
   colors: "Cream / Pearl White, Gold, Black & White letter beads.",
