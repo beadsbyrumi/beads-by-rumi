@@ -304,6 +304,23 @@ window.BBR_PRODUCTS = [
   colors: "Pink, Light Blue, Peach/Yellow, Soft Pink, Mauve/Purple, White and Gold accents.",
   production: "2–3 days, depending on order quantity",
   bulk: "Available for bulk orders on request via WhatsApp"
+},
+  {
+  code: "BBR-LC-001",
+  name: "Handmade Pearl & Lavender Beaded Lipstick Case",
+  collection: "Accessories Collection",
+  category: "ACCESSORIES",
+  pricePKR: "PKR 2,000",
+  priceUSD: "USD 7",
+  status: "In Stock + Made to Order",
+  badge: "Elegant Beauty Essential",
+  featured: true,
+  image: "images/pearl and purple lipstick case.jpg",
+  description: "A charming handmade beaded lipstick case combining glossy pearl beads with sparkling lavender faceted beads. Finished with a delicate beaded strap and gold-tone clasp, it keeps your lipstick close while adding an elegant handcrafted touch to your handbag or outfit.",
+  materials: "Faux pearls; lavender crystal/faceted glass beads; gold-toned metal clasp; beaded strap.",
+  colors: "Light Lavender / Purple, Pearl White, Gold",
+  production: "2–3 days, depending on order quantity",
+  bulk: "Available for bulk orders on request via WhatsApp"
 }
 ];
 
