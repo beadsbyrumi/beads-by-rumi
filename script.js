@@ -50,6 +50,25 @@ if (offer && window.BBR_OFFERS && window.BBR_OFFERS.active) {
   const detail=document.querySelector("[data-product-detail]");
   if(detail && window.BBR_PRODUCTS){
     const p=window.BBR_PRODUCTS.find(x=>x.code===code) || window.BBR_PRODUCTS[0];
+
+        // Product SEO
+    document.title = `${p.name} | Beads by Rumi`;
+
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        `${p.name} — ${p.description} Available from Beads by Rumi.`
+      );
+    }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
+    }
+    canonical.href = `${location.origin}${location.pathname}?code=${encodeURIComponent(p.code)}`;
     detail.innerHTML=`<img src="${p.image}" alt="${p.name}"><div><span class="badge">${p.badge}</span><p class="eyebrow">${p.collection} · ${p.category}</p><h1>${p.name}</h1><div class="price-row"><span class="price">${p.pricePKR}</span><span class="price">${p.priceUSD}</span></div><p class="description">${p.description}</p><div class="info-list">
       <div><strong>Product Code</strong><span>${p.code}</span></div><div><strong>Status</strong><span>${p.status}</span></div><div><strong>Production</strong><span>${p.production}</span></div><div><strong>Materials</strong><span>${p.materials}</span></div><div><strong>Colors</strong><span>${p.colors}</span></div><div><strong>Bulk Orders</strong><span>${p.bulk}</span></div>
       </div><a class="btn" href="https://wa.me/923322636648?text=${encodeURIComponent("Hi Beads by Rumi, I’d like to order "+p.name+" ("+p.code+").")}">Order on WhatsApp</a></div>`;
