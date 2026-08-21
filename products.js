@@ -321,6 +321,23 @@ window.BBR_PRODUCTS = [
   colors: "Light Lavender / Purple, Pearl White, Gold",
   production: "2–3 days, depending on order quantity",
   bulk: "Available for bulk orders on request via WhatsApp"
+},
+  {
+  code: "BBR-AC-001",
+  name: "Handmade Two-Tone Pearl Beaded AirPods Case",
+  collection: "Accessories Collection",
+  category: "ACCESSORIES",
+  pricePKR: "PKR 2,400",
+  priceUSD: "USD 9",
+  status: "In Stock + Made to Order",
+  badge: "Stylish Tech Accessory",
+  featured: true,
+  image: "images/pearl beads two tone airpod case.jpg",
+  description: "A stylish handmade AirPods case featuring a sparkling two-tone faceted bead design combined with glossy pearl beads. Finished with a secure gold-tone lobster clasp, it adds a beautiful handcrafted touch while making your AirPods easy to carry and attach to a bag.",
+  materials: "Faceted crystal glass beads; faux pearls; gold-toned metal lobster clasp/keychain; jewelry wire.",
+  colors: "Hot Pink & Pearl White; Light Aqua / Mint Blue & Pearl White; Gold accents.",
+  production: "2–3 days, depending on order quantity",
+  bulk: "Available for bulk orders on request via WhatsApp"
 }
 ];
 
