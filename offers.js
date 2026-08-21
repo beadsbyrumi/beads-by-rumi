@@ -1,7 +1,7 @@
 window.BBR_OFFERS = {
   active: true,
   eyebrow: "CURRENT OFFER",
-  title: "A little something special",
-  text: "Seasonal offers and custom bulk-order opportunities will appear here. Update this file whenever you want to change the offer.",
-  badge: "Update anytime"
+  title: "Handcrafted with a little extra love",
+  text: "Looking for a special gift or planning an event? Ask us about custom colors, personalized orders and bulk quantities.",
+  badge: "Custom & Bulk Orders Available"
 };
