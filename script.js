@@ -51,54 +51,116 @@ if (offer && window.BBR_OFFERS && window.BBR_OFFERS.active) {
   if(detail && window.BBR_PRODUCTS){
     const p=window.BBR_PRODUCTS.find(x=>x.code===code) || window.BBR_PRODUCTS[0];
 
-        // Product SEO
-    document.title = `${p.name} | Beads by Rumi`;
+       // Product SEO
+document.title = `${p.name} | Beads by Rumi`;
 
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute(
-        "content",
-        `${p.name} — ${p.description} Available from Beads by Rumi.`
-      );
-    }
+// Meta description
+const metaDescription = document.querySelector('meta[name="description"]');
 
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
-    canonical.href = `${location.origin}${location.pathname}?code=${encodeURIComponent(p.code)}`;
-     // Product structured data for Google
-const existingSchema = document.querySelector('script[data-product-schema]');
-if (existingSchema) existingSchema.remove();
+const seoDescription =
+  `${p.name} — ${p.description} Handmade by Beads by Rumi. ` +
+  `Shop handcrafted beaded bags and accessories from Pakistan.`;
+
+if (metaDescription) {
+  metaDescription.setAttribute("content", seoDescription);
+}
+
+// Canonical URL
+let canonical = document.querySelector('link[rel="canonical"]');
+
+if (!canonical) {
+  canonical = document.createElement("link");
+  canonical.rel = "canonical";
+  document.head.appendChild(canonical);
+}
+
+canonical.href =
+  `${location.origin}${location.pathname}?code=${encodeURIComponent(p.code)}`;
+
+// Open Graph helper
+function setMeta(property, content, attribute = "property") {
+  let tag = document.querySelector(
+    `meta[${attribute}="${property}"]`
+  );
+
+  if (!tag) {
+    tag = document.createElement("meta");
+    tag.setAttribute(attribute, property);
+    document.head.appendChild(tag);
+  }
+
+  tag.setAttribute("content", content);
+}
+
+// Open Graph / Facebook / WhatsApp sharing
+setMeta("og:type", "product");
+setMeta("og:title", `${p.name} | Beads by Rumi`);
+setMeta("og:description", seoDescription);
+setMeta("og:url", canonical.href);
+setMeta("og:image", new URL(p.image, location.href).href);
+setMeta("og:site_name", "Beads by Rumi");
+
+// Twitter / X sharing
+setMeta("twitter:card", "summary_large_image", "name");
+setMeta("twitter:title", `${p.name} | Beads by Rumi`, "name");
+setMeta("twitter:description", seoDescription, "name");
+setMeta(
+  "twitter:image",
+  new URL(p.image, location.href).href,
+  "name"
+);
+
+// Product structured data for Google
+const existingSchema =
+  document.querySelector('script[data-product-schema]');
+
+if (existingSchema) {
+  existingSchema.remove();
+}
 
 const schema = document.createElement("script");
+
 schema.type = "application/ld+json";
 schema.setAttribute("data-product-schema", "true");
 
-const pricePKR = Number(p.pricePKR.replace(/[^\d]/g, ""));
+const pricePKR = Number(
+  String(p.pricePKR || "").replace(/[^\d.]/g, "")
+);
+
+const availability =
+  String(p.status || "")
+    .toLowerCase()
+    .includes("in stock")
+    ? "https://schema.org/InStock"
+    : "https://schema.org/PreOrder";
 
 schema.textContent = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Product",
+
   "name": p.name,
+
   "description": p.description,
-  "image": new URL(p.image, location.href).href,
+
+  "image": [
+    new URL(p.image, location.href).href
+  ],
+
   "sku": p.code,
+
   "category": p.category,
+
   "brand": {
     "@type": "Brand",
     "name": "Beads by Rumi"
   },
+
   "offers": {
     "@type": "Offer",
     "url": canonical.href,
     "priceCurrency": "PKR",
     "price": pricePKR,
-    "availability": p.status.toLowerCase().includes("in stock")
-      ? "https://schema.org/InStock"
-      : "https://schema.org/PreOrder"
+    "availability": availability
   }
 });
 
