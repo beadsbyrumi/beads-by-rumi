@@ -4,103 +4,39 @@
   <url>
     <loc>https://beadsbyrumi.github.io/beads-by-rumi/</loc>
   </url>
-
   <url>
     <loc>https://beadsbyrumi.github.io/beads-by-rumi/shop.html</loc>
   </url>
-
   <url>
     <loc>https://beadsbyrumi.github.io/beads-by-rumi/about.html</loc>
   </url>
-
   <url>
     <loc>https://beadsbyrumi.github.io/beads-by-rumi/bulk.html</loc>
   </url>
-
   <url>
     <loc>https://beadsbyrumi.github.io/beads-by-rumi/contact.html</loc>
   </url>
 
-  <!-- Products -->
-
-  <url>
-  <loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-luxury-pearl-beaded-handbag.html</loc>
-</url>
-
-<url>
-  <loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-pearl-mini-crossbody-shoulder-pouch.html</loc>
-</url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-PB-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-PC-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-EP-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-MQ-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-MB-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-CB-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-MG-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-PS-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-KC-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-PIK-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-TB-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-FPB-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-GPB-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-TLP-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-KI-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-FB-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-LC-001</loc>
-  </url>
-
-  <url>
-    <loc>https://beadsbyrumi.github.io/beads-by-rumi/product.html?code=BBR-AC-001</loc>
-  </url>
+  <!-- Product pages -->
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-luxury-pearl-beaded-handbag.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-pearl-mini-crossbody-shoulder-pouch.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-pearl-beaded-party-potli-bag.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-pearl-beaded-clutch-shoulder-bag.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-pearl-beaded-evening-party-bag.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-mini-pearl-beaded-quinn-bag.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-white-pearl-mia-beaded-bag.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-crystal-bridal-beaded-clutch.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-mini-pearl-gifting-shoulder-bag.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-pearl-beaded-shoulder-bag.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-pearl-beaded-bag-charm-keychain-set.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-personalized-pearl-initial-keychain.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-beaded-pearl-toggle-bracelet.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-freshwater-pearl-stretch-bracelet.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-golden-pearl-bangle-bracelet.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-triple-layer-pearl-bracelet.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-custom-pearl-initial-keychain.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-multicolor-flower-beaded-bracelet.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-pearl-lavender-beaded-lipstick-case.html</loc></url>
+  <url><loc>https://beadsbyrumi.github.io/beads-by-rumi/products/handmade-two-tone-pearl-beaded-airpods-case.html</loc></url>
 
 </urlset>
