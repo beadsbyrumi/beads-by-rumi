@@ -22,10 +22,17 @@ window.BBR_PRODUCT_URLS = {
   "BBR-AC-001": "products/handmade-two-tone-pearl-beaded-airpods-case.html"
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll('a[href^="product.html?code="]').forEach(link => {
-    const code = new URL(link.href, location.href).searchParams.get("code");
+function bbrApplyProductLinks(root = document) {
+  root.querySelectorAll('a[href*="product.html?code="]').forEach(link => {
+    const url = new URL(link.href, location.href);
+    const code = url.searchParams.get("code");
     const target = window.BBR_PRODUCT_URLS[code];
     if (target) link.href = target;
   });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  bbrApplyProductLinks();
+  const observer = new MutationObserver(() => bbrApplyProductLinks());
+  observer.observe(document.body, { childList: true, subtree: true });
 });
