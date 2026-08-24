@@ -1,0 +1,66 @@
+name: SEO Technical Cleanup
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Clean product HTML and normalize availability
+        shell: python
+        run: |
+          from pathlib import Path
+
+          changed = []
+
+          for path in Path("products").glob("*.html"):
+              text = path.read_text(encoding="utf-8")
+              original = text
+
+              # Some product pages were saved as Markdown-wrapped HTML.
+              # Convert those files back into valid standalone HTML.
+              stripped = text.lstrip("\ufeff\n\r \t")
+              if stripped.startswith("# ") and "\n```html\n" in stripped:
+                  _, html_part = stripped.split("\n```html\n", 1)
+                  if html_part.rstrip().endswith("```"):
+                      text = html_part.rstrip()[:-3].rstrip() + "\n"
+
+              # Made-to-order products are orderable; PreOrder is not the
+              # appropriate Schema.org availability for this catalog.
+              if path.name == "handmade-luxury-pearl-beaded-handbag.html":
+                  text = text.replace(
+                      '"availability": "https://schema.org/PreOrder"',
+                      '"availability": "https://schema.org/InStock"'
+                  )
+
+              if text != original:
+                  path.write_text(text, encoding="utf-8")
+                  changed.append(str(path))
+
+          if changed:
+              print("Updated:")
+              print("\n".join(changed))
+          else:
+              print("No technical cleanup changes were needed.")
+
+      - name: Commit cleanup changes
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add products/*.html
+          git commit -m "Fix product HTML wrappers and SEO availability"
+          git push
