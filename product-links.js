@@ -1,0 +1,31 @@
+/* SEO internal linking: map catalog product codes to permanent product URLs. */
+window.BBR_PRODUCT_URLS = {
+  "BBR-HB-001": "products/handmade-luxury-pearl-beaded-handbag.html",
+  "BBR-SB-001": "products/handmade-pearl-mini-crossbody-shoulder-pouch.html",
+  "BBR-PB-001": "products/handmade-pearl-beaded-party-potli-bag.html",
+  "BBR-PC-001": "products/handmade-pearl-beaded-clutch-shoulder-bag.html",
+  "BBR-EP-001": "products/handmade-pearl-beaded-evening-party-bag.html",
+  "BBR-MQ-001": "products/handmade-mini-pearl-beaded-quinn-bag.html",
+  "BBR-MB-001": "products/handmade-white-pearl-mia-beaded-bag.html",
+  "BBR-CB-001": "products/handmade-crystal-bridal-beaded-clutch.html",
+  "BBR-MG-001": "products/handmade-mini-pearl-gifting-shoulder-bag.html",
+  "BBR-PS-001": "products/handmade-pearl-beaded-shoulder-bag.html",
+  "BBR-KC-001": "products/handmade-pearl-beaded-bag-charm-keychain-set.html",
+  "BBR-PIK-001": "products/handmade-custom-pearl-initial-keychain.html",
+  "BBR-TB-001": "products/handmade-beaded-pearl-toggle-bracelet.html",
+  "BBR-FPB-001": "products/handmade-freshwater-pearl-stretch-bracelet.html",
+  "BBR-GPB-001": "products/handmade-golden-pearl-bangle-bracelet.html",
+  "BBR-TLP-001": "products/handmade-triple-layer-pearl-bracelet.html",
+  "BBR-KI-001": "products/handmade-personalized-pearl-initial-keychain.html",
+  "BBR-FB-001": "products/handmade-multicolor-flower-beaded-bracelet.html",
+  "BBR-LC-001": "products/handmade-pearl-lavender-beaded-lipstick-case.html",
+  "BBR-AC-001": "products/handmade-two-tone-pearl-beaded-airpods-case.html"
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('a[href^="product.html?code="]').forEach(link => {
+    const code = new URL(link.href, location.href).searchParams.get("code");
+    const target = window.BBR_PRODUCT_URLS[code];
+    if (target) link.href = target;
+  });
+});
