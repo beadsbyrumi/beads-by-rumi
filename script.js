@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded",()=>{
   const menu=document.querySelector(".menu-toggle"),nav=document.querySelector(".nav");
   if(menu) menu.addEventListener("click",()=>nav.classList.toggle("open"));
 
-  const productUrl=code=>window.BBR_PRODUCT_URLS&&window.BBR_PRODUCT_URLS[code]
-    ? window.BBR_PRODUCT_URLS[code]
-    : `product.html?code=${encodeURIComponent(code)}`;
+  const productUrl=code=>window.BBR_PRODUCT_LINKS&&window.BBR_PRODUCT_LINKS[code]
+  ? window.BBR_PRODUCT_LINKS[code]
+  : `product.html?code=${encodeURIComponent(code)}`;
 
   const productGrid=document.querySelector("[data-products]");
   if(productGrid&&window.BBR_PRODUCTS){
