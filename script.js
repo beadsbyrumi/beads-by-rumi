@@ -36,12 +36,29 @@ document.addEventListener("DOMContentLoaded",()=>{
     offer.innerHTML=`<p class="eyebrow">${BBR_OFFERS.eyebrow}</p><h2>${BBR_OFFERS.title}</h2><p class="narrow">${BBR_OFFERS.text}</p><span class="offer-badge">${BBR_OFFERS.badge}</span>`;
   }
 
-  document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
-    document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));btn.classList.add("active");
-    const f=btn.dataset.filter;
-    document.querySelectorAll(".product").forEach(p=>p.style.display=(f==="all"||p.dataset.category.includes(f))?"block":"none");
-  }));
+ document.querySelectorAll(".filter").forEach(btn => btn.addEventListener("click", () => {
+  document.querySelectorAll(".filter").forEach(x => x.classList.remove("active"));
+  btn.classList.add("active");
 
+  const filterMap = {
+    all: ["HANDBAGS", "SHOULDER BAGS", "ACCESSORIES", "BRACELETS"],
+    handbags: ["HANDBAGS"],
+    shoulder: ["SHOULDER BAGS"],
+    accessories: ["ACCESSORIES", "BRACELETS"]
+  };
+
+  const f = btn.dataset.filter;
+  const allowed = filterMap[f] || [];
+
+  document.querySelectorAll(".product").forEach(product => {
+    const category = product.dataset.category.toUpperCase();
+
+    product.style.display =
+      f === "all" || allowed.includes(category)
+        ? "block"
+        : "none";
+  });
+}));
   const params=new URLSearchParams(location.search),code=params.get("code");
   const detail=document.querySelector("[data-product-detail]");
   if(detail&&window.BBR_PRODUCTS){
