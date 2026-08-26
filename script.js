@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const featured = document.querySelector("[data-featured]");
 
   if (featured) {
-    const featuredProducts = products.filter((p) => p.featured);
+    const featuredProducts = products.filter((p) => p.featured).slice(0, 6);
 
     featured.innerHTML = featuredProducts.length
       ? featuredProducts.map((p) => `
@@ -127,8 +127,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const code = params.get("code");
   const detail = document.querySelector("[data-product-detail]");
 
-  if (detail && products.length) {
-    const product = products.find((item) => item.code === code) || products[0];
+  if (detail) {
+    const product = products.find((item) => item.code === code);
+
+    if (!product) {
+      document.title = "Product Not Found | Beads by Rumi";
+      const metaDescription = document.querySelector('meta[name="description"]');
+      if (metaDescription) {
+        metaDescription.setAttribute("content", "The requested Beads by Rumi product could not be found. Please browse our handmade collection.");
+      }
+
+      detail.innerHTML = `
+        <div class="empty">
+          <h1>Product Not Found</h1>
+          <p>We couldn't find that product. Please return to our shop and choose a product from the current collection.</p>
+          <a class="btn" href="shop.html">Browse the Collection</a>
+        </div>
+      `;
+      return;
+    }
+
     const cleanUrl = links[product.code]
       ? new URL(links[product.code], window.location.href).href
       : `${window.location.origin}${window.location.pathname}?code=${encodeURIComponent(product.code)}`;
